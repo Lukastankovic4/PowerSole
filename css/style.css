@@ -1,31 +1,124 @@
-*{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-color: white;
-}
-
-main{
     display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
 }
-.button-style {
-    margin-left: 150px;
-    background-color: rgba(217, 217, 217, 1);
-    width: 700px;
-    height: 52px;
-    margin-top: 34px;
-    color: rgba(133, 133, 133, 1);
-    text-align: left;
-    padding-left: 55px;
-  }
 
-  .fa-magnifying-glass{
-    position: absolute;
-    top: 62px;
-    left: 675px;
-  }
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-icon, .logo, .search-icon, .cart-icon {
+    margin: 0 5px;
+}
+
+
+.logo {
+    width: 50%; /* Adjust logo size on mobile */
+    max-height: 50px; /* You can tweak this as needed */
+}
+
+.search-bar {
+    display: none; /* Hide search bar on mobile */
+}
+
+main {
+    text-align: center;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.product-img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.function-section h3 {
+    margin-top: 40px;
+}
+
+.function-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.function-items img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .menu-icon {
+        display: none; /* hide the hamburger icon on desktop */
+    }
+
+    .logo {
+        width: auto; /* Reset logo size on desktop */
+        flex-grow: 0;
+    }
+
+    .search-bar {
+        flex-grow: 2;
+        margin-left: 20px;
+        display: block; /* Show search bar on desktop */
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .product-img {
+        width: 70%;
+    }
+
+    .function-items {
+        justify-content: space-evenly;
+    }
+}
+
+.login-btn {
+    display: none; /* By default, the button is hidden for mobile view */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
+
+@media (min-width: 768px) {
+    .login-btn {
+        display: inline-block; /* Display the button on desktop */
+    }
+}
+
+/* General icon styling */
+.fa-solid {
+    font-size: 24px;  /* Adjust this value to make the icons bigger or smaller */
+    margin-right: 10px;  /* Space between icons and other elements */
+}
+
+/* Specific icon stylings */
+
+.fa-person-running, .fa-dumbbell {
+    font-size: 30px;  /* Adjust this value as needed */
+}
