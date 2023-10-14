@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - POWERSOLE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aa2689a54b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <i class="fa-solid fa-bars menu-btn"></i>  <!-- Menu icon with the class 'menu-btn' -->
+    <a href="index.html">
+    <img src="img/logo..png" alt="Powersole Logo" class="logo">
+    </a>
+    <input type="text" placeholder="Search" class="search-bar">
+    <i class="fa-solid fa-magnifying-glass search-btn"></i>  <!-- Search icon with the class 'search-btn' -->
+    <button class="login-btn">Register/Log in</button>
+    <i class="fa-solid fa-cart-shopping cart-btn"></i>  <!-- Cart icon with the class 'cart-btn' -->
+</header>
+
+<!-- Breadcrumb & Product Details -->
+<main>
+    <nav>
+        <a href="index.html">Home</a> / <a href="produktliste.html">Running</a> / "Product name"
+    </nav>
+
+    <section class="product-detail">
+        <img src="img/running12.jpg" alt="Product main">
+        <span class="thumbnails">
+            <img src="img/hel.jpg" alt="Thumbnail 1">
+            <img src="img/hrlp.jpg" alt="Thumbnail 2">
+            <img src="img/a.jpg" alt="Thumbnail 3">
+        </span>
+        <h3>"Product brand"</h3>
+        <h1>"Product name"</h1>
+        <span class="rating">★★★★☆ 2398 Reviews £119</span>
+        <select>
+            <option value="color">Color</option>
+        </select>
+        <select>
+            <option value="size">Size</option>
+        </select>
+        <span class="quantity">
+            <button class="decrease">-</button>
+            <input type="number" value="1">
+            <button class="increase">+</button>
+        </span>
+        <button class="add-to-cart">Add to cart</button>
+        <input type="email" placeholder="Email me when available!">
+    </section>
+</main>
+
+</body>
+</html>
